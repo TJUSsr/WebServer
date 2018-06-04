@@ -1,0 +1,8 @@
+//
+// Created by Monster on 2018/6/4.
+//
+
+#ifndef WEBSERVER_ASYNCLOGGING_H
+#define WEBSERVER_ASYNCLOGGING_H
+
+#endif //WEBSERVER_ASYNCLOGGING_H
