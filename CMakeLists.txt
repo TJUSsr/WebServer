@@ -17,7 +17,7 @@ elseif(ANDROID)
     message("ANDROID")
 endif()
 
-set(WebServer main.cpp WebServer/Channel.h WebServer/Epoll.h WebServer/EventLoop.h WebServer/EventLoopThread.h WebServer/EventThreadPool.h WebServer/HttpData.h WebServer/Server.h WebServer/ThreadPool.h AuxiliaryModule/Timer.h AuxiliaryModule/Util.h AuxiliaryModule/Config.h ServerLog/AsyncLogging.h ServerLog/FileUtil.h ServerLog/LogStream.h ServerLog/Logging.h AuxiliaryModule/Condition.h AuxiliaryModule/CountDownLatch.h AuxiliaryModule/CurrentThread.h ServerLog/LogFile.h AuxiliaryModule/MutexLock.h WebServer/Thread.h AuxiliaryModule/noncopyable.h)
+set(WebServer main.cpp WebServer/Channel.h WebServer/Epoll.h WebServer/EventLoop.h WebServer/EventLoopThread.h WebServer/EventThreadPool.h WebServer/HttpData.h WebServer/Server.h WebServer/ThreadPool.h AuxiliaryModule/Timer.h AuxiliaryModule/Util.h AuxiliaryModule/Config.h ServerLog/AsyncLogging.h ServerLog/FileUtil.h ServerLog/LogStream.h ServerLog/Logging.h AuxiliaryModule/Condition.h AuxiliaryModule/CountDownLatch.h AuxiliaryModule/CurrentThread.h ServerLog/LogFile.h AuxiliaryModule/MutexLock.h WebServer/Thread.h AuxiliaryModule/noncopyable.h AuxiliaryModule/CountDownLatch.cpp WebServer/Thread.cpp WebServer/CurrentThread.h)
 #生成可执行文件
 add_executable(WebServer_${CMAKE_BUILD_TYPE}_${CMAKE_CXX_PLATFORM_ID} ${WebServer})
 if(UNIX AND NOT ANDROID)
